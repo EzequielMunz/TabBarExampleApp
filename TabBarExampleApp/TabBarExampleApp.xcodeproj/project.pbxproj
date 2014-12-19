@@ -15,6 +15,8 @@
 		37454B951A44A85F008EB825 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37454B941A44A85F008EB825 /* Images.xcassets */; };
 		37454B981A44A85F008EB825 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37454B961A44A85F008EB825 /* LaunchScreen.xib */; };
 		37454BA41A44A85F008EB825 /* TabBarExampleAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 37454BA31A44A85F008EB825 /* TabBarExampleAppTests.m */; };
+		37454BB11A44B2A1008EB825 /* FourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37454BB01A44B2A1008EB825 /* FourthViewController.m */; };
+		37454BB41A44B38F008EB825 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37454BB31A44B38F008EB825 /* ThirdViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,10 @@
 		37454B9D1A44A85F008EB825 /* TabBarExampleAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TabBarExampleAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		37454BA21A44A85F008EB825 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		37454BA31A44A85F008EB825 /* TabBarExampleAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBarExampleAppTests.m; sourceTree = "<group>"; };
+		37454BAF1A44B2A1008EB825 /* FourthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourthViewController.h; sourceTree = "<group>"; };
+		37454BB01A44B2A1008EB825 /* FourthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourthViewController.m; sourceTree = "<group>"; };
+		37454BB21A44B38F008EB825 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		37454BB31A44B38F008EB825 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,11 +92,8 @@
 			children = (
 				37454B881A44A85F008EB825 /* AppDelegate.h */,
 				37454B891A44A85F008EB825 /* AppDelegate.m */,
-				37454B8B1A44A85F008EB825 /* FirstViewController.h */,
-				37454B8C1A44A85F008EB825 /* FirstViewController.m */,
-				37454B8E1A44A85F008EB825 /* SecondViewController.h */,
-				37454B8F1A44A85F008EB825 /* SecondViewController.m */,
-				37454B911A44A85F008EB825 /* Main.storyboard */,
+				37454BAE1A44AEA7008EB825 /* View Controllers */,
+				37454BAD1A44AE9A008EB825 /* Storyboards */,
 				37454B941A44A85F008EB825 /* Images.xcassets */,
 				37454B961A44A85F008EB825 /* LaunchScreen.xib */,
 				37454B841A44A85F008EB825 /* Supporting Files */,
@@ -122,6 +125,29 @@
 				37454BA21A44A85F008EB825 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		37454BAD1A44AE9A008EB825 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				37454B911A44A85F008EB825 /* Main.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		37454BAE1A44AEA7008EB825 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				37454B8B1A44A85F008EB825 /* FirstViewController.h */,
+				37454B8C1A44A85F008EB825 /* FirstViewController.m */,
+				37454B8E1A44A85F008EB825 /* SecondViewController.h */,
+				37454B8F1A44A85F008EB825 /* SecondViewController.m */,
+				37454BB21A44B38F008EB825 /* ThirdViewController.h */,
+				37454BB31A44B38F008EB825 /* ThirdViewController.m */,
+				37454BAF1A44B2A1008EB825 /* FourthViewController.h */,
+				37454BB01A44B2A1008EB825 /* FourthViewController.m */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,6 +251,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				37454B901A44A85F008EB825 /* SecondViewController.m in Sources */,
+				37454BB11A44B2A1008EB825 /* FourthViewController.m in Sources */,
+				37454BB41A44B38F008EB825 /* ThirdViewController.m in Sources */,
 				37454B8A1A44A85F008EB825 /* AppDelegate.m in Sources */,
 				37454B8D1A44A85F008EB825 /* FirstViewController.m in Sources */,
 				37454B871A44A85F008EB825 /* main.m in Sources */,

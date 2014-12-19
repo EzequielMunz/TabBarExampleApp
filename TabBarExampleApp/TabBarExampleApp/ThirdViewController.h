@@ -1,5 +1,5 @@
 //
-//  FirstViewController.h
+//  ThirdViewController.h
 //  TabBarExampleApp
 //
 //  Created by Ezequiel on 12/19/14.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FirstViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
-
+@interface ThirdViewController : UIViewController
 
 @end
-
