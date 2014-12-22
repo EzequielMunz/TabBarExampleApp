@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>BF61E576-EFA0-4C35-AA85-46A390E446BE</string>
+	<key>IDESourceControlProjectName</key>
+	<string>TabBarExampleApp</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>B270B10544137E1C4BB2B0EC15DFEA13C2C70A32</key>
+		<string>https://github.com/EzequielMunz/TabBarExampleApp.git</string>
+		<key>CFFDC53BBA1F25D128925AC3079644A2390124D2</key>
+		<string>https://github.com/EzequielMunz/TabBarExampleApp</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>TabBarExampleApp/TabBarExampleApp.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>B270B10544137E1C4BB2B0EC15DFEA13C2C70A32</key>
+		<string>../../..</string>
+		<key>CFFDC53BBA1F25D128925AC3079644A2390124D2</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/EzequielMunz/TabBarExampleApp.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>B270B10544137E1C4BB2B0EC15DFEA13C2C70A32</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CFFDC53BBA1F25D128925AC3079644A2390124D2</string>
+			<key>IDESourceControlWCCName</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B270B10544137E1C4BB2B0EC15DFEA13C2C70A32</string>
+			<key>IDESourceControlWCCName</key>
+			<string>HumanaTryOut</string>
+		</dict>
+	</array>
+</dict>
+</plist>

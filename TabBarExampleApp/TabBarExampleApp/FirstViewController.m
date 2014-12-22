@@ -103,6 +103,45 @@ typedef enum
 
 }
 
+/*- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    UITableViewHeaderFooterView* headerView = [[UITableViewHeaderFooterView alloc] initWithFrame:CGRectMake(0, 0, tableView.bounds.size.width, 30)];
+    [headerView setTintColor:[UIColor blackColor]];
+    
+    TableSections idSection = (TableSections)section;
+    switch (idSection) {
+        case WEA:
+            [headerView.textLabel setText:@"WEA"];
+            break;
+        case INFO:
+            [headerView.textLabel setText:@"INFO"];
+            break;
+        default:
+            break;
+    }
+
+    return headerView;
+}*/
+
+-(void)tableView:(UITableView *)tableView willDisplayHeaderView:(UIView *)view forSection:(NSInteger)section
+{
+    UITableViewHeaderFooterView* headerView = (UITableViewHeaderFooterView*)view;
+    [headerView setTintColor:[UIColor blackColor]];
+    [headerView.textLabel setTextColor:[UIColor whiteColor]];
+    
+    TableSections idSection = (TableSections)section;
+    switch (idSection) {
+        case WEA:
+            [headerView.textLabel setText:@"WEA"];
+            break;
+        case INFO:
+            [headerView.textLabel setText:@"INFO"];
+            break;
+        default:
+            break;
+    }
+}
+
 - (UITableViewCell*) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:CELL_ID];
@@ -130,22 +169,27 @@ typedef enum
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     TableSections idSection = (TableSections)indexPath.section;
+<<<<<<< HEAD
     UIStoryboard *story;
     UIViewController *view;
     Credits* vista;
+=======
+>>>>>>> origin/ContactList
     
     switch (idSection) {
         case WEA:
             switch (indexPath.row)
             {
                 case MESSAGES:
-                    story = [UIStoryboard storyboardWithName:@"Messages" bundle:[NSBundle mainBundle]];
-                    view = (MessageFirstViewController*)[story instantiateViewControllerWithIdentifier:@"part1"];
-                    [self.navigationController pushViewController:view animated:YES];
+                    [self instantiateViewControllerId:@"part1" inStoryboard:@"Messages"];
                 break;
                 case CREDITS:
+<<<<<<< HEAD
                     vista = [[Credits alloc] initWithNibName:@"Credits" bundle:[NSBundle mainBundle]];
                     [self.navigationController pushViewController:vista animated:YES];
+=======
+                    [self instantiateViewControllerId:@"part2" inStoryboard:@"Messages"];
+>>>>>>> origin/ContactList
                 break;
         }
             break;
@@ -158,7 +202,7 @@ typedef enum
                     [self showAlertViewWithTitle:@"DATA" andMessage:@"Put your data here" andCancelButton:@"Yes SIR"];
                     break;
                 case INFORMATION:
-                    [self showAlertViewWithTitle:@"INFO" andMessage:@"Put your info here" andCancelButton:@"Yes SIR"];
+                    [self instantiateViewControllerId:@"ContactsList" inStoryboard:@"Contacts"];
                     break;
                 case CONTACT_US:
                     [self showMail:MAIL_REC_ADDRESS];
@@ -166,6 +210,16 @@ typedef enum
             }
             break;
     }
+}
+
+- (void) instantiateViewControllerId: (NSString*)identifier inStoryboard: (NSString*)storyboard
+{
+    UIStoryboard *story;
+    UIViewController *view;
+    
+    story = [UIStoryboard storyboardWithName:storyboard bundle:[NSBundle mainBundle]];
+    view = (MessageFirstViewController*)[story instantiateViewControllerWithIdentifier:identifier];
+    [self.navigationController pushViewController:view animated:YES];
 }
 
 #pragma mark - AlertView struct

@@ -17,6 +17,12 @@
 		37454BA41A44A85F008EB825 /* TabBarExampleAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 37454BA31A44A85F008EB825 /* TabBarExampleAppTests.m */; };
 		37454BB11A44B2A1008EB825 /* FourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37454BB01A44B2A1008EB825 /* FourthViewController.m */; };
 		37454BB41A44B38F008EB825 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37454BB31A44B38F008EB825 /* ThirdViewController.m */; };
+		377C9A4E1A48914D0025DC48 /* ContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 377C9A451A48914D0025DC48 /* ContactsViewController.m */; };
+		377C9A501A48914D0025DC48 /* ContactCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 377C9A481A48914D0025DC48 /* ContactCell.m */; };
+		377C9A511A48914D0025DC48 /* ContactCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 377C9A491A48914D0025DC48 /* ContactCell.xib */; };
+		377C9A521A48914D0025DC48 /* ContactManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 377C9A4B1A48914D0025DC48 /* ContactManager.m */; };
+		377C9A531A48914D0025DC48 /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = 377C9A4D1A48914D0025DC48 /* Contact.m */; };
+		377C9A561A4891D20025DC48 /* Contacts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 377C9A551A4891D20025DC48 /* Contacts.storyboard */; };
 		3781C5741A44B88100D84566 /* Credits.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3781C5731A44B88100D84566 /* Credits.storyboard */; };
 		3781C5761A44B96800D84566 /* Messages.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3781C5751A44B96800D84566 /* Messages.storyboard */; };
 		3781C5791A44BA6700D84566 /* CreditsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3781C5781A44BA6700D84566 /* CreditsViewController.m */; };
@@ -59,6 +65,16 @@
 		37454BB01A44B2A1008EB825 /* FourthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourthViewController.m; sourceTree = "<group>"; };
 		37454BB21A44B38F008EB825 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
 		37454BB31A44B38F008EB825 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		377C9A441A48914D0025DC48 /* ContactsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ContactsViewController.h; path = ../../../VirtualPet/VirtualPet/VirtualPet/ContactsView/ContactsViewController.h; sourceTree = "<group>"; };
+		377C9A451A48914D0025DC48 /* ContactsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ContactsViewController.m; path = ../../../VirtualPet/VirtualPet/VirtualPet/ContactsView/ContactsViewController.m; sourceTree = "<group>"; };
+		377C9A471A48914D0025DC48 /* ContactCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ContactCell.h; path = ../../../VirtualPet/VirtualPet/VirtualPet/ContactsView/ContactCell.h; sourceTree = "<group>"; };
+		377C9A481A48914D0025DC48 /* ContactCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ContactCell.m; path = ../../../VirtualPet/VirtualPet/VirtualPet/ContactsView/ContactCell.m; sourceTree = "<group>"; };
+		377C9A491A48914D0025DC48 /* ContactCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ContactCell.xib; path = ../../../VirtualPet/VirtualPet/VirtualPet/ContactsView/ContactCell.xib; sourceTree = "<group>"; };
+		377C9A4A1A48914D0025DC48 /* ContactManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ContactManager.h; path = ../../../VirtualPet/VirtualPet/VirtualPet/ContactsView/ContactManager.h; sourceTree = "<group>"; };
+		377C9A4B1A48914D0025DC48 /* ContactManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ContactManager.m; path = ../../../VirtualPet/VirtualPet/VirtualPet/ContactsView/ContactManager.m; sourceTree = "<group>"; };
+		377C9A4C1A48914D0025DC48 /* Contact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Contact.h; path = ../../../VirtualPet/VirtualPet/VirtualPet/ContactsView/Contact.h; sourceTree = "<group>"; };
+		377C9A4D1A48914D0025DC48 /* Contact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Contact.m; path = ../../../VirtualPet/VirtualPet/VirtualPet/ContactsView/Contact.m; sourceTree = "<group>"; };
+		377C9A551A4891D20025DC48 /* Contacts.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Contacts.storyboard; sourceTree = "<group>"; };
 		3781C5731A44B88100D84566 /* Credits.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Credits.storyboard; sourceTree = "<group>"; };
 		3781C5751A44B96800D84566 /* Messages.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Messages.storyboard; sourceTree = "<group>"; };
 		3781C5771A44BA6700D84566 /* CreditsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreditsViewController.h; sourceTree = "<group>"; };
@@ -157,6 +173,7 @@
 				37454B911A44A85F008EB825 /* Main.storyboard */,
 				3781C5731A44B88100D84566 /* Credits.storyboard */,
 				3781C5751A44B96800D84566 /* Messages.storyboard */,
+				377C9A551A4891D20025DC48 /* Contacts.storyboard */,
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
@@ -164,6 +181,7 @@
 		37454BAE1A44AEA7008EB825 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				377C9A541A48915F0025DC48 /* Contacts */,
 				37454B8B1A44A85F008EB825 /* FirstViewController.h */,
 				37454B8C1A44A85F008EB825 /* FirstViewController.m */,
 				37454B8E1A44A85F008EB825 /* SecondViewController.h */,
@@ -183,6 +201,7 @@
 			name = "View Controllers";
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		37A120EE1A48920F00E25358 /* swiftModule */ = {
 			isa = PBXGroup;
 			children = (
@@ -194,6 +213,22 @@
 				37A120EC1A4891C200E25358 /* CreditPerson.swift */,
 			);
 			name = swiftModule;
+=======
+		377C9A541A48915F0025DC48 /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				377C9A441A48914D0025DC48 /* ContactsViewController.h */,
+				377C9A451A48914D0025DC48 /* ContactsViewController.m */,
+				377C9A471A48914D0025DC48 /* ContactCell.h */,
+				377C9A481A48914D0025DC48 /* ContactCell.m */,
+				377C9A491A48914D0025DC48 /* ContactCell.xib */,
+				377C9A4A1A48914D0025DC48 /* ContactManager.h */,
+				377C9A4B1A48914D0025DC48 /* ContactManager.m */,
+				377C9A4C1A48914D0025DC48 /* Contact.h */,
+				377C9A4D1A48914D0025DC48 /* Contact.m */,
+			);
+			name = Contacts;
+>>>>>>> origin/ContactList
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,9 +311,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< HEAD
 				37A120EB1A48918900E25358 /* CreditsCell.xib in Resources */,
 				37454B931A44A85F008EB825 /* Main.storyboard in Resources */,
 				37454B981A44A85F008EB825 /* LaunchScreen.xib in Resources */,
+=======
+				377C9A561A4891D20025DC48 /* Contacts.storyboard in Resources */,
+				37454B931A44A85F008EB825 /* Main.storyboard in Resources */,
+				37454B981A44A85F008EB825 /* LaunchScreen.xib in Resources */,
+				37A120E71A488BC000E25358 /* Creditos.xib in Resources */,
+				377C9A511A48914D0025DC48 /* ContactCell.xib in Resources */,
+>>>>>>> origin/ContactList
 				37454B951A44A85F008EB825 /* Images.xcassets in Resources */,
 				3781C5761A44B96800D84566 /* Messages.storyboard in Resources */,
 				37A120F41A489E3D00E25358 /* Credits.xib in Resources */,
@@ -300,12 +343,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				377C9A501A48914D0025DC48 /* ContactCell.m in Sources */,
+				377C9A4E1A48914D0025DC48 /* ContactsViewController.m in Sources */,
 				37454B901A44A85F008EB825 /* SecondViewController.m in Sources */,
 				37454BB11A44B2A1008EB825 /* FourthViewController.m in Sources */,
+				377C9A531A48914D0025DC48 /* Contact.m in Sources */,
 				37454BB41A44B38F008EB825 /* ThirdViewController.m in Sources */,
 				37A120ED1A4891C200E25358 /* CreditPerson.swift in Sources */,
 				3781C57C1A44BA7B00D84566 /* MessageFirstViewController.m in Sources */,
 				37454B8A1A44A85F008EB825 /* AppDelegate.m in Sources */,
+				377C9A521A48914D0025DC48 /* ContactManager.m in Sources */,
 				37454B8D1A44A85F008EB825 /* FirstViewController.m in Sources */,
 				37A120EA1A48918900E25358 /* CreditsCell.swift in Sources */,
 				3781C57F1A44BA8800D84566 /* MessageSecondViewController.m in Sources */,
