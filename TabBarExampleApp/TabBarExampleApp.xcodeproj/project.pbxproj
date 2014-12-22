@@ -22,6 +22,8 @@
 		3781C5791A44BA6700D84566 /* CreditsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3781C5781A44BA6700D84566 /* CreditsViewController.m */; };
 		3781C57C1A44BA7B00D84566 /* MessageFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3781C57B1A44BA7B00D84566 /* MessageFirstViewController.m */; };
 		3781C57F1A44BA8800D84566 /* MessageSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3781C57E1A44BA8800D84566 /* MessageSecondViewController.m */; };
+		37A120E61A488BC000E25358 /* Creditos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A120E41A488BC000E25358 /* Creditos.swift */; };
+		37A120E71A488BC000E25358 /* Creditos.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37A120E51A488BC000E25358 /* Creditos.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,9 @@
 		3781C57B1A44BA7B00D84566 /* MessageFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageFirstViewController.m; sourceTree = "<group>"; };
 		3781C57D1A44BA8800D84566 /* MessageSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageSecondViewController.h; sourceTree = "<group>"; };
 		3781C57E1A44BA8800D84566 /* MessageSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageSecondViewController.m; sourceTree = "<group>"; };
+		37A120E31A488BC000E25358 /* TabBarExampleApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TabBarExampleApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		37A120E41A488BC000E25358 /* Creditos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Creditos.swift; sourceTree = "<group>"; };
+		37A120E51A488BC000E25358 /* Creditos.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Creditos.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +172,9 @@
 				3781C57B1A44BA7B00D84566 /* MessageFirstViewController.m */,
 				3781C57D1A44BA8800D84566 /* MessageSecondViewController.h */,
 				3781C57E1A44BA8800D84566 /* MessageSecondViewController.m */,
+				37A120E41A488BC000E25358 /* Creditos.swift */,
+				37A120E51A488BC000E25358 /* Creditos.xib */,
+				37A120E31A488BC000E25358 /* TabBarExampleApp-Bridging-Header.h */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -253,6 +261,7 @@
 			files = (
 				37454B931A44A85F008EB825 /* Main.storyboard in Resources */,
 				37454B981A44A85F008EB825 /* LaunchScreen.xib in Resources */,
+				37A120E71A488BC000E25358 /* Creditos.xib in Resources */,
 				37454B951A44A85F008EB825 /* Images.xcassets in Resources */,
 				3781C5761A44B96800D84566 /* Messages.storyboard in Resources */,
 				3781C5741A44B88100D84566 /* Credits.storyboard in Resources */,
@@ -279,6 +288,7 @@
 				3781C57C1A44BA7B00D84566 /* MessageFirstViewController.m in Sources */,
 				37454B8A1A44A85F008EB825 /* AppDelegate.m in Sources */,
 				37454B8D1A44A85F008EB825 /* FirstViewController.m in Sources */,
+				37A120E61A488BC000E25358 /* Creditos.swift in Sources */,
 				3781C57F1A44BA8800D84566 /* MessageSecondViewController.m in Sources */,
 				3781C5791A44BA6700D84566 /* CreditsViewController.m in Sources */,
 				37454B871A44A85F008EB825 /* main.m in Sources */,
@@ -403,9 +413,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = TabBarExampleApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TabBarExampleApp/TabBarExampleApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -413,9 +427,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = TabBarExampleApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TabBarExampleApp/TabBarExampleApp-Bridging-Header.h";
 			};
 			name = Release;
 		};

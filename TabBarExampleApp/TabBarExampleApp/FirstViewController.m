@@ -11,6 +11,10 @@
 #import "MessageFirstViewController.h"
 #import "MessageSecondViewController.h"
 
+#define MAIL_BODY_MSG @"sup bud?!"
+#define MAIL_SUBJ_MSG @"Check it out!"
+#define MAIL_REC_ADDRESS @"nicolas.palmieri@globant.com"
+
 NSString* const CELL_ID = @"Cell";
 
 typedef enum
@@ -41,6 +45,8 @@ typedef enum
 @property (strong, nonatomic) IBOutlet UITableView *myTable;
 @property (nonatomic, strong) NSArray* dataWea;
 @property (nonatomic, strong) NSArray* dataInfo;
+
+@property (strong, nonatomic) MFMailComposeViewController *correo;
 
 @end
 
@@ -154,16 +160,65 @@ typedef enum
                     [self showAlertViewWithTitle:@"INFO" andMessage:@"Put your info here" andCancelButton:@"Yes SIR"];
                     break;
                 case CONTACT_US:
-                    [self showAlertViewWithTitle:@"CONTACT US" andMessage:@"Put your contact us here" andCancelButton:@"Yes SIR"];
+                    [self showMail:MAIL_REC_ADDRESS];
                     break;
             }
             break;
     }
 }
 
+#pragma mark - AlertView struct
 - (void) showAlertViewWithTitle: (NSString*)title andMessage: (NSString*)message andCancelButton: (NSString*)cancel
 {
     [[[UIAlertView alloc] initWithTitle:title message:message delegate:self cancelButtonTitle:cancel otherButtonTitles:nil, nil] show];
+}
+
+#pragma mark - Mail
+-(void)showMail:(NSString*) address
+{
+    MFMailComposeViewController *correo = [[MFMailComposeViewController alloc] init];
+    correo.mailComposeDelegate = self;
+    
+    //Subject
+    NSString *mailSubj = [[NSString alloc] initWithFormat:MAIL_SUBJ_MSG];
+    [correo setSubject:mailSubj];
+    
+    //BodyText
+    NSString *mailBody = [[NSString alloc] initWithFormat:MAIL_BODY_MSG];
+    [correo setMessageBody:mailBody isHTML:NO];
+    
+    //To
+    [correo setToRecipients:[NSArray arrayWithObject:address]];
+    
+    //Interface
+    [self presentViewController:correo animated:YES completion:nil];
+}
+
+- (void)mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error
+{
+    switch (result)
+    {
+        case MFMailComposeResultSent:
+            [self showAlertViewWithTitle:@"STATUS!" andMessage:@"Message sended!" andCancelButton:@"OKey"];
+            break;
+            
+        case MFMailComposeResultSaved:
+            [self showAlertViewWithTitle:@"STATUS!" andMessage:@"Message stored!" andCancelButton:@"OKey"];
+            break;
+            
+        case MFMailComposeResultCancelled:
+            [self showAlertViewWithTitle:@"STATUS!" andMessage:@"Message cancelled!" andCancelButton:@"OKey"];
+            break;
+            
+        case MFMailComposeResultFailed:
+            [self showAlertViewWithTitle:@"STATUS!" andMessage:@"Compose ERROR!" andCancelButton:@"OKey"];
+            break;
+            
+        default:
+            [self showAlertViewWithTitle:@"STATUS!" andMessage:@"ERROR DEF!" andCancelButton:@"OKey"];
+            break;
+    }
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end

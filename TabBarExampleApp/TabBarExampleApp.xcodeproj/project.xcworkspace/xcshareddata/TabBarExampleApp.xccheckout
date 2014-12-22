@@ -12,6 +12,8 @@
 	<dict>
 		<key>B270B10544137E1C4BB2B0EC15DFEA13C2C70A32</key>
 		<string>https://github.com/EzequielMunz/TabBarExampleApp.git</string>
+		<key>CFFDC53BBA1F25D128925AC3079644A2390124D2</key>
+		<string>https://github.com/EzequielMunz/TabBarExampleApp</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>TabBarExampleApp/TabBarExampleApp.xcodeproj</string>
@@ -19,6 +21,8 @@
 	<dict>
 		<key>B270B10544137E1C4BB2B0EC15DFEA13C2C70A32</key>
 		<string>../../..</string>
+		<key>CFFDC53BBA1F25D128925AC3079644A2390124D2</key>
+		<string>../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/EzequielMunz/TabBarExampleApp.git</string>
@@ -28,6 +32,14 @@
 	<string>B270B10544137E1C4BB2B0EC15DFEA13C2C70A32</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CFFDC53BBA1F25D128925AC3079644A2390124D2</string>
+			<key>IDESourceControlWCCName</key>
+			<string></string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
