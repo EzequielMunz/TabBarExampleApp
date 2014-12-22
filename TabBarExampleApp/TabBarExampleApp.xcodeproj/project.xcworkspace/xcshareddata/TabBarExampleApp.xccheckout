@@ -10,6 +10,8 @@
 	<string>TabBarExampleApp</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
+		<key>A7387F0D977FA5ACA016F16235E8819367F620EB</key>
+		<string>https://github.com/EzequielMunz/VirtualPet.git</string>
 		<key>B270B10544137E1C4BB2B0EC15DFEA13C2C70A32</key>
 		<string>https://github.com/EzequielMunz/TabBarExampleApp.git</string>
 	</dict>
@@ -17,6 +19,8 @@
 	<string>TabBarExampleApp/TabBarExampleApp.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
+		<key>A7387F0D977FA5ACA016F16235E8819367F620EB</key>
+		<string>../../../../VirtualPet</string>
 		<key>B270B10544137E1C4BB2B0EC15DFEA13C2C70A32</key>
 		<string>../../..</string>
 	</dict>
@@ -35,6 +39,14 @@
 			<string>B270B10544137E1C4BB2B0EC15DFEA13C2C70A32</string>
 			<key>IDESourceControlWCCName</key>
 			<string>HumanaTryOut</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>A7387F0D977FA5ACA016F16235E8819367F620EB</string>
+			<key>IDESourceControlWCCName</key>
+			<string>VirtualPet</string>
 		</dict>
 	</array>
 </dict>
