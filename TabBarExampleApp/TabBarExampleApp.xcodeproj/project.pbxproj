@@ -22,8 +22,11 @@
 		3781C5791A44BA6700D84566 /* CreditsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3781C5781A44BA6700D84566 /* CreditsViewController.m */; };
 		3781C57C1A44BA7B00D84566 /* MessageFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3781C57B1A44BA7B00D84566 /* MessageFirstViewController.m */; };
 		3781C57F1A44BA8800D84566 /* MessageSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3781C57E1A44BA8800D84566 /* MessageSecondViewController.m */; };
-		37A120E61A488BC000E25358 /* Creditos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A120E41A488BC000E25358 /* Creditos.swift */; };
-		37A120E71A488BC000E25358 /* Creditos.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37A120E51A488BC000E25358 /* Creditos.xib */; };
+		37A120EA1A48918900E25358 /* CreditsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A120E81A48918900E25358 /* CreditsCell.swift */; };
+		37A120EB1A48918900E25358 /* CreditsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37A120E91A48918900E25358 /* CreditsCell.xib */; };
+		37A120ED1A4891C200E25358 /* CreditPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A120EC1A4891C200E25358 /* CreditPerson.swift */; };
+		37A120F31A489E3D00E25358 /* Credits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A120F11A489E3D00E25358 /* Credits.swift */; };
+		37A120F41A489E3D00E25358 /* Credits.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37A120F21A489E3D00E25358 /* Credits.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,8 +68,11 @@
 		3781C57D1A44BA8800D84566 /* MessageSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageSecondViewController.h; sourceTree = "<group>"; };
 		3781C57E1A44BA8800D84566 /* MessageSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageSecondViewController.m; sourceTree = "<group>"; };
 		37A120E31A488BC000E25358 /* TabBarExampleApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TabBarExampleApp-Bridging-Header.h"; sourceTree = "<group>"; };
-		37A120E41A488BC000E25358 /* Creditos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Creditos.swift; sourceTree = "<group>"; };
-		37A120E51A488BC000E25358 /* Creditos.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Creditos.xib; sourceTree = "<group>"; };
+		37A120E81A48918900E25358 /* CreditsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditsCell.swift; sourceTree = "<group>"; };
+		37A120E91A48918900E25358 /* CreditsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreditsCell.xib; sourceTree = "<group>"; };
+		37A120EC1A4891C200E25358 /* CreditPerson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditPerson.swift; sourceTree = "<group>"; };
+		37A120F11A489E3D00E25358 /* Credits.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Credits.swift; sourceTree = "<group>"; };
+		37A120F21A489E3D00E25358 /* Credits.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Credits.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,11 +178,22 @@
 				3781C57B1A44BA7B00D84566 /* MessageFirstViewController.m */,
 				3781C57D1A44BA8800D84566 /* MessageSecondViewController.h */,
 				3781C57E1A44BA8800D84566 /* MessageSecondViewController.m */,
-				37A120E41A488BC000E25358 /* Creditos.swift */,
-				37A120E51A488BC000E25358 /* Creditos.xib */,
-				37A120E31A488BC000E25358 /* TabBarExampleApp-Bridging-Header.h */,
+				37A120EE1A48920F00E25358 /* swiftModule */,
 			);
 			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		37A120EE1A48920F00E25358 /* swiftModule */ = {
+			isa = PBXGroup;
+			children = (
+				37A120F11A489E3D00E25358 /* Credits.swift */,
+				37A120F21A489E3D00E25358 /* Credits.xib */,
+				37A120E31A488BC000E25358 /* TabBarExampleApp-Bridging-Header.h */,
+				37A120E81A48918900E25358 /* CreditsCell.swift */,
+				37A120E91A48918900E25358 /* CreditsCell.xib */,
+				37A120EC1A4891C200E25358 /* CreditPerson.swift */,
+			);
+			name = swiftModule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,11 +276,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37A120EB1A48918900E25358 /* CreditsCell.xib in Resources */,
 				37454B931A44A85F008EB825 /* Main.storyboard in Resources */,
 				37454B981A44A85F008EB825 /* LaunchScreen.xib in Resources */,
-				37A120E71A488BC000E25358 /* Creditos.xib in Resources */,
 				37454B951A44A85F008EB825 /* Images.xcassets in Resources */,
 				3781C5761A44B96800D84566 /* Messages.storyboard in Resources */,
+				37A120F41A489E3D00E25358 /* Credits.xib in Resources */,
 				3781C5741A44B88100D84566 /* Credits.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,12 +303,14 @@
 				37454B901A44A85F008EB825 /* SecondViewController.m in Sources */,
 				37454BB11A44B2A1008EB825 /* FourthViewController.m in Sources */,
 				37454BB41A44B38F008EB825 /* ThirdViewController.m in Sources */,
+				37A120ED1A4891C200E25358 /* CreditPerson.swift in Sources */,
 				3781C57C1A44BA7B00D84566 /* MessageFirstViewController.m in Sources */,
 				37454B8A1A44A85F008EB825 /* AppDelegate.m in Sources */,
 				37454B8D1A44A85F008EB825 /* FirstViewController.m in Sources */,
-				37A120E61A488BC000E25358 /* Creditos.swift in Sources */,
+				37A120EA1A48918900E25358 /* CreditsCell.swift in Sources */,
 				3781C57F1A44BA8800D84566 /* MessageSecondViewController.m in Sources */,
 				3781C5791A44BA6700D84566 /* CreditsViewController.m in Sources */,
+				37A120F31A489E3D00E25358 /* Credits.swift in Sources */,
 				37454B871A44A85F008EB825 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

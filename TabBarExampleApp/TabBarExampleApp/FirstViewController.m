@@ -10,6 +10,7 @@
 #import "CreditsViewController.h"
 #import "MessageFirstViewController.h"
 #import "MessageSecondViewController.h"
+#import "TabBarExampleApp-Swift.h"
 
 #define MAIL_BODY_MSG @"sup bud?!"
 #define MAIL_SUBJ_MSG @"Check it out!"
@@ -131,6 +132,7 @@ typedef enum
     TableSections idSection = (TableSections)indexPath.section;
     UIStoryboard *story;
     UIViewController *view;
+    Credits* vista;
     
     switch (idSection) {
         case WEA:
@@ -142,9 +144,8 @@ typedef enum
                     [self.navigationController pushViewController:view animated:YES];
                 break;
                 case CREDITS:
-                    story = [UIStoryboard storyboardWithName:@"Messages" bundle:[NSBundle mainBundle]];
-                    view = (MessageSecondViewController*)[story instantiateViewControllerWithIdentifier:@"part2"];
-                    [self.navigationController pushViewController:view animated:YES];
+                    vista = [[Credits alloc] initWithNibName:@"Credits" bundle:[NSBundle mainBundle]];
+                    [self.navigationController pushViewController:vista animated:YES];
                 break;
         }
             break;
