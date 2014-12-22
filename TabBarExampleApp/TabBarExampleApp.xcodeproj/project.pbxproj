@@ -201,7 +201,6 @@
 			name = "View Controllers";
 			sourceTree = "<group>";
 		};
-<<<<<<< HEAD
 		37A120EE1A48920F00E25358 /* swiftModule */ = {
 			isa = PBXGroup;
 			children = (
@@ -213,7 +212,6 @@
 				37A120EC1A4891C200E25358 /* CreditPerson.swift */,
 			);
 			name = swiftModule;
-=======
 		377C9A541A48915F0025DC48 /* Contacts */ = {
 			isa = PBXGroup;
 			children = (
@@ -228,7 +226,6 @@
 				377C9A4D1A48914D0025DC48 /* Contact.m */,
 			);
 			name = Contacts;
->>>>>>> origin/ContactList
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,17 +308,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-<<<<<<< HEAD
 				37A120EB1A48918900E25358 /* CreditsCell.xib in Resources */,
 				37454B931A44A85F008EB825 /* Main.storyboard in Resources */,
 				37454B981A44A85F008EB825 /* LaunchScreen.xib in Resources */,
-=======
 				377C9A561A4891D20025DC48 /* Contacts.storyboard in Resources */,
 				37454B931A44A85F008EB825 /* Main.storyboard in Resources */,
 				37454B981A44A85F008EB825 /* LaunchScreen.xib in Resources */,
 				37A120E71A488BC000E25358 /* Creditos.xib in Resources */,
 				377C9A511A48914D0025DC48 /* ContactCell.xib in Resources */,
->>>>>>> origin/ContactList
 				37454B951A44A85F008EB825 /* Images.xcassets in Resources */,
 				3781C5761A44B96800D84566 /* Messages.storyboard in Resources */,
 				37A120F41A489E3D00E25358 /* Credits.xib in Resources */,
