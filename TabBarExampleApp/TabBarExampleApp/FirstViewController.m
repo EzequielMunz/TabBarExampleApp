@@ -7,13 +7,17 @@
 //
 
 #import "FirstViewController.h"
+#import "CreditsViewController.h"
+#import "MessageFirstViewController.h"
+#import "MessageSecondViewController.h"
 
 NSString* const CELL_ID = @"Cell";
 
 typedef enum
 {
     MESSAGES = 0,
-    CREDITS
+    CREDITS,
+    FIESTA
     
 } CellIdentifier;
 
@@ -40,7 +44,7 @@ typedef enum
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 2;
+    return self.data.count;
 }
 
 - (UITableViewCell*) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -52,20 +56,29 @@ typedef enum
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CELL_ID];
     }
     cell.textLabel.text = (NSString*)self.data[indexPath.row];
-    
+    NSLog(@"%ld", (long)indexPath.row);
     return cell;
 }
 
-- (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    CellIdentifier id = (CellIdentifier)indexPath.row;
+    CellIdentifier id_ = (CellIdentifier)indexPath.row;
     
-    switch (id) {
+    UIStoryboard *story;
+    UIViewController *view;
+    switch (id_)
+    {
         case MESSAGES:
-            
+            story = [UIStoryboard storyboardWithName:@"Messages" bundle:[NSBundle mainBundle]];
+            view = (MessageFirstViewController*)[story instantiateViewControllerWithIdentifier:@"part1"];
+            [self.navigationController pushViewController:view animated:YES];
             break;
         case CREDITS:
-            
+            story = [UIStoryboard storyboardWithName:@"Messages" bundle:[NSBundle mainBundle]];
+            view = (MessageSecondViewController*)[story instantiateViewControllerWithIdentifier:@"part2"];
+            [self.navigationController pushViewController:view animated:YES];
+            break;
+        case FIESTA:
             break;
         default:
             break;

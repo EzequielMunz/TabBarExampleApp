@@ -17,6 +17,11 @@
 		37454BA41A44A85F008EB825 /* TabBarExampleAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 37454BA31A44A85F008EB825 /* TabBarExampleAppTests.m */; };
 		37454BB11A44B2A1008EB825 /* FourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37454BB01A44B2A1008EB825 /* FourthViewController.m */; };
 		37454BB41A44B38F008EB825 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37454BB31A44B38F008EB825 /* ThirdViewController.m */; };
+		3781C5741A44B88100D84566 /* Credits.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3781C5731A44B88100D84566 /* Credits.storyboard */; };
+		3781C5761A44B96800D84566 /* Messages.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3781C5751A44B96800D84566 /* Messages.storyboard */; };
+		3781C5791A44BA6700D84566 /* CreditsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3781C5781A44BA6700D84566 /* CreditsViewController.m */; };
+		3781C57C1A44BA7B00D84566 /* MessageFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3781C57B1A44BA7B00D84566 /* MessageFirstViewController.m */; };
+		3781C57F1A44BA8800D84566 /* MessageSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3781C57E1A44BA8800D84566 /* MessageSecondViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,14 @@
 		37454BB01A44B2A1008EB825 /* FourthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourthViewController.m; sourceTree = "<group>"; };
 		37454BB21A44B38F008EB825 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
 		37454BB31A44B38F008EB825 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		3781C5731A44B88100D84566 /* Credits.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Credits.storyboard; sourceTree = "<group>"; };
+		3781C5751A44B96800D84566 /* Messages.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Messages.storyboard; sourceTree = "<group>"; };
+		3781C5771A44BA6700D84566 /* CreditsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreditsViewController.h; sourceTree = "<group>"; };
+		3781C5781A44BA6700D84566 /* CreditsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreditsViewController.m; sourceTree = "<group>"; };
+		3781C57A1A44BA7B00D84566 /* MessageFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageFirstViewController.h; sourceTree = "<group>"; };
+		3781C57B1A44BA7B00D84566 /* MessageFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageFirstViewController.m; sourceTree = "<group>"; };
+		3781C57D1A44BA8800D84566 /* MessageSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageSecondViewController.h; sourceTree = "<group>"; };
+		3781C57E1A44BA8800D84566 /* MessageSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageSecondViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +144,8 @@
 			isa = PBXGroup;
 			children = (
 				37454B911A44A85F008EB825 /* Main.storyboard */,
+				3781C5731A44B88100D84566 /* Credits.storyboard */,
+				3781C5751A44B96800D84566 /* Messages.storyboard */,
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
@@ -146,6 +161,12 @@
 				37454BB31A44B38F008EB825 /* ThirdViewController.m */,
 				37454BAF1A44B2A1008EB825 /* FourthViewController.h */,
 				37454BB01A44B2A1008EB825 /* FourthViewController.m */,
+				3781C5771A44BA6700D84566 /* CreditsViewController.h */,
+				3781C5781A44BA6700D84566 /* CreditsViewController.m */,
+				3781C57A1A44BA7B00D84566 /* MessageFirstViewController.h */,
+				3781C57B1A44BA7B00D84566 /* MessageFirstViewController.m */,
+				3781C57D1A44BA8800D84566 /* MessageSecondViewController.h */,
+				3781C57E1A44BA8800D84566 /* MessageSecondViewController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -233,6 +254,8 @@
 				37454B931A44A85F008EB825 /* Main.storyboard in Resources */,
 				37454B981A44A85F008EB825 /* LaunchScreen.xib in Resources */,
 				37454B951A44A85F008EB825 /* Images.xcassets in Resources */,
+				3781C5761A44B96800D84566 /* Messages.storyboard in Resources */,
+				3781C5741A44B88100D84566 /* Credits.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,8 +276,11 @@
 				37454B901A44A85F008EB825 /* SecondViewController.m in Sources */,
 				37454BB11A44B2A1008EB825 /* FourthViewController.m in Sources */,
 				37454BB41A44B38F008EB825 /* ThirdViewController.m in Sources */,
+				3781C57C1A44BA7B00D84566 /* MessageFirstViewController.m in Sources */,
 				37454B8A1A44A85F008EB825 /* AppDelegate.m in Sources */,
 				37454B8D1A44A85F008EB825 /* FirstViewController.m in Sources */,
+				3781C57F1A44BA8800D84566 /* MessageSecondViewController.m in Sources */,
+				3781C5791A44BA6700D84566 /* CreditsViewController.m in Sources */,
 				37454B871A44A85F008EB825 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -446,6 +472,7 @@
 				37454BA91A44A85F008EB825 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		37454BAA1A44A85F008EB825 /* Build configuration list for PBXNativeTarget "TabBarExampleAppTests" */ = {
 			isa = XCConfigurationList;
@@ -454,6 +481,7 @@
 				37454BAC1A44A85F008EB825 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
